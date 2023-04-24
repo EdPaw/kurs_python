@@ -110,7 +110,3 @@ print("\nDASHES INSTEAD OF SPACES\n", txt_dash)
 print("\nTEXT DOTS\n")
 txt_dot = txt_dash.split(".")
 print(txt_dot)
-
-foo = "mppmt"
-result = "".join(dict.fromkeys(foo))
-print(result)
