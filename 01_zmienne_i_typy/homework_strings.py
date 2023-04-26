@@ -82,7 +82,14 @@ print("Your book is:", book)
 book_len = len(book)
 print(book_len)
 
-#5 Palindrom to wyrażenie brzmiące tak samo czytane od lewej do prawej i od prawej do lewej np.: Kobyła ma mały bok. Pozwól użytkownikowi wprowadzić dowolne zdanie. Następnie sprawdź czy wprowadzone wyrażenie jest palindromem.
+#5 Palindrom to wyrażenie brzmiące tak samo czytane od lewej do prawej i od prawej do lewej np.: Kobyła ma mały bok.
+# Pozwól użytkownikowi wprowadzić dowolne zdanie. Następnie sprawdź czy wprowadzone wyrażenie jest palindromem.
+pal = str(input("Enter sentence: "))
+pal_reversed = pal[::-1].upper().replace(" ", "")
+
+is_pal = pal.upper().replace(" ", "") == pal_reversed
+
+print("If palindrom:", is_pal)
 
 #6 Przekopiuj zawartość import this do zmiennej.
 print("\nTASK 6")
