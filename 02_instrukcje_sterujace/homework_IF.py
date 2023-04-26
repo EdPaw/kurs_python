@@ -1,4 +1,4 @@
-""""# 2 Pobierz dwie liczby całkowite od użytkownika i oblicz ich sumę. Jeśli suma jest większa niż 100, wyświetl wynik, w przeciwnym wypadku wyświetl “Koniec”.
+# 2 Pobierz dwie liczby całkowite od użytkownika i oblicz ich sumę. Jeśli suma jest większa niż 100, wyświetl wynik, w przeciwnym wypadku wyświetl “Koniec”.
 liczba_1 = int(input("Podaj pierwszą liczbę: "))
 liczba_2 = int(input("Podaj drugą liczbę: "))
 
@@ -47,7 +47,7 @@ elif BMI < 29.9:
     print("Your BMI is:",BMI, "- masz nadwagę")
 else:
     print("Your BMI is:", BMI, "- masz otyłość")
-"""
+
 #8 Sortowanie. Trzy dowolne liczby podane przez użytkownika zapisz do trzech zmiennych. Znajdź największą liczbę. Wyświetl liczby od największej do najmniejszej.
 
 nr_1 = float(input("Podaj pierwszą liczbę: "))
@@ -68,6 +68,7 @@ elif nr_3 > nr_1 and nr_3 > nr_2:
     if nr_1 > nr_2:
         print(nr_3, nr_1, nr_2)
     else:
+        print(nr_3, nr_2, nr_1)
 
 # 2 sposób
 nr_min = min(nr_1, nr_2, nr_3)
