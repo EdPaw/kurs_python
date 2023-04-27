@@ -49,7 +49,6 @@ else:
     print("Your BMI is:", BMI, "- masz otyłość")
 
 #8 Sortowanie. Trzy dowolne liczby podane przez użytkownika zapisz do trzech zmiennych. Znajdź największą liczbę. Wyświetl liczby od największej do najmniejszej.
-
 nr_1 = float(input("Podaj pierwszą liczbę: "))
 nr_2 = float(input("Podaj drugą liczbę: "))
 nr_3 = float(input("Podaj trzecią liczbę: "))

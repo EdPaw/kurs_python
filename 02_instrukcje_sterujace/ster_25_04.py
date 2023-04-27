@@ -1,4 +1,4 @@
-""""#1
+#1
 num = int(input("Podaj liczbe: "))
 if num % 3 == 0 :
     print("Twoja liczba jest podzielna przez 3")
@@ -60,7 +60,7 @@ magic = "hokuspokus"
 for num in range(2, 10, 2):
     pa = pa + str(num) + magic[num]
     print(pa)
-"""
+
 
 
 

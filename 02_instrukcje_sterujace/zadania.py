@@ -1,4 +1,4 @@
-"""#1
+#1
 items = ["phone", "water", "headphones"]
 
 for i in items:
@@ -51,7 +51,7 @@ print(names_list)
 
 for i in names_list:
     print("Witaj:", i)
-"""
+
 #3
 txt = str(input("Podaj ciąg znaków: "))
 
