@@ -1,6 +1,6 @@
 import random
 
-# 2 Pobierz od użytkownika dowolny tekst i wyświetl tylko te znaki, które są na pozycjach parzystych. Wykonaj na dwa sposoby -
+#➤ 2 Pobierz od użytkownika dowolny tekst i wyświetl tylko te znaki, które są na pozycjach parzystych. Wykonaj na dwa sposoby -
 # za pomocą pętli oraz przez sting slicing ( ‘abrakadabra’ -> ‘baaar’).
 text = str(input("Wpisz dowolny tekst: "))
 print(text[1::2])
@@ -9,7 +9,7 @@ for i in range(1, len(text), 2):
     print(text[i])
 
 
-# 4 Napisz grę - kamień (k) / papier (p) / nożyce (n). #Użytkownik podaje jedną z 3 figur. #Komputer losuje jedną z 3 figur. Sprawdź kto wygrał tę rundę.
+#➤ 4 Napisz grę - kamień (k) / papier (p) / nożyce (n). #Użytkownik podaje jedną z 3 figur. #Komputer losuje jedną z 3 figur. Sprawdź kto wygrał tę rundę.
 # Zmień kod tak, by użytkownik mógł podac liczbę rund.
 # Wygrana jest podawana jako suma wygranych rund komputer vs użytkownik. #Zmień tak, by gracz mógł zakończyć grę w dowolnej chwili przez np. hasło ‘koniec’
 wynik_komp = 0
@@ -72,7 +72,7 @@ else:
 
 print(f"Komputer: {wynik_komp}, Ty: {wynik_uzytk}. Koniec gry")
 
-# 5 Stwórz grę ciepło zimno. #Komputer losuje liczbę z zakresu od 1 do 100. Użytkownik podaje swój traf. #Komuter odpowiada ciepło zimno, ale nie więcej niż 6 razy.
+#➤ 5 Stwórz grę ciepło zimno. #Komputer losuje liczbę z zakresu od 1 do 100. Użytkownik podaje swój traf. #Komuter odpowiada ciepło zimno, ale nie więcej niż 6 razy.
 #Jeśli użytkownik zgadnie wygrywa gracz. #Jeśli po 6 próbach użytkownik nie zgadnie - wygrywa komputer.
 los_liczba = random.randrange(1, 100)
 print(los_liczba)

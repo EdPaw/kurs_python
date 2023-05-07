@@ -1,4 +1,4 @@
-# 2 Utwórz listę, która zawiera składniki na ulubione danie. Wyświetl komunikaty co należy pokolei dodać.
+#➤ 2 Utwórz listę, która zawiera składniki na ulubione danie. Wyświetl komunikaty co należy pokolei dodać.
 # Poza pętlą umieść pozostałe instrukcje np. “Wrzuć do pierkanika”, “Podawaj schłodzone”.
 sklad = ["boczek", "jajka", "parmezan", "spaghetti"]
 print("Podsmażaj i gotuj:\n")
@@ -8,7 +8,7 @@ for i in sklad:
 
 print("\nPodawaj natychmiast po przygotowaniu.")
 
-# 4 Napisz program, który wyświetli kolejne wyniki dla silni liczby naturalnej N (N podane przez użytkownika, ale nie większe niż 8).
+#➤ 4 Napisz program, który wyświetli kolejne wyniki dla silni liczby naturalnej N (N podane przez użytkownika, ale nie większe niż 8).
 n = int(input("Podaj liczbę N do obliczenia silni (nie większa niż 8): "))
 
 if n > 8:

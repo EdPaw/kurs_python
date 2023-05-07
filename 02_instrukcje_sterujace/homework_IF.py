@@ -1,4 +1,4 @@
-# 2 Pobierz dwie liczby całkowite od użytkownika i oblicz ich sumę. Jeśli suma jest większa niż 100, wyświetl wynik, w przeciwnym wypadku wyświetl “Koniec”.
+#➤ 2 Pobierz dwie liczby całkowite od użytkownika i oblicz ich sumę. Jeśli suma jest większa niż 100, wyświetl wynik, w przeciwnym wypadku wyświetl “Koniec”.
 liczba_1 = int(input("Podaj pierwszą liczbę: "))
 liczba_2 = int(input("Podaj drugą liczbę: "))
 
@@ -9,7 +9,7 @@ if liczba_sum > 100:
 else:
     print("Koniec")
 
-# 4 Utwórz zmienną przechowującą dowolny ciąg znaków. Sprawdź czy utworzony string jest dłuższy niż 5 znaków oraz czy zawiera literę a.
+#➤ 4 Utwórz zmienną przechowującą dowolny ciąg znaków. Sprawdź czy utworzony string jest dłuższy niż 5 znaków oraz czy zawiera literę a.
 # Jeśli zawiera, wszystkie litery a podmień na z i wyświetl powstały napis.
 znaki = str(input("Wpisz dowolny ciąg znaków: "))
 
@@ -22,7 +22,7 @@ else:
     print("brak rezultatu")
 
 
-# 6 Zapytaj użytkownika o numer od 1 do 100, jeśli użytkownik zgadnie liczbę ukrytą przez programistę wyświetl komunikat “gratulacje!”, w przeciwnym razie wyświetl “pudło!”.
+#➤ 6 Zapytaj użytkownika o numer od 1 do 100, jeśli użytkownik zgadnie liczbę ukrytą przez programistę wyświetl komunikat “gratulacje!”, w przeciwnym razie wyświetl “pudło!”.
 liczba_prog = 7
 liczba = int(input("Podaj liczbę od 1 do 100: "))
 
@@ -33,7 +33,7 @@ elif liczba == liczba_prog:
 else:
     print("pudło!")
 
-#7 Rozwiń kod bmi.py z pierwszych zajęć dodając teraz instrukcję warunkową, która wyświetli w zależności od wyniku: niedowaga / waga normalna / nadwaga / otyłość.
+#➤ 7 Rozwiń kod bmi.py z pierwszych zajęć dodając teraz instrukcję warunkową, która wyświetli w zależności od wyniku: niedowaga / waga normalna / nadwaga / otyłość.
 kg = float(input("Podaj masę (kg): "))
 height = float(input("Podaj wzrost (m): "))
 
@@ -48,7 +48,7 @@ elif BMI < 29.9:
 else:
     print("Your BMI is:", BMI, "- masz otyłość")
 
-#8 Sortowanie. Trzy dowolne liczby podane przez użytkownika zapisz do trzech zmiennych. Znajdź największą liczbę. Wyświetl liczby od największej do najmniejszej.
+#➤ 8 Sortowanie. Trzy dowolne liczby podane przez użytkownika zapisz do trzech zmiennych. Znajdź największą liczbę. Wyświetl liczby od największej do najmniejszej.
 nr_1 = float(input("Podaj pierwszą liczbę: "))
 nr_2 = float(input("Podaj drugą liczbę: "))
 nr_3 = float(input("Podaj trzecią liczbę: "))

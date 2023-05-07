@@ -1,4 +1,4 @@
-#user to input variables
+#➤ user to input variables
 distance = float(input("Enter distance in km: "))
 consumption = float(input("Enter fuel consumption per 100 km: "))
 gas_price = float(input("Enter gas price per liter: "))

@@ -1,4 +1,4 @@
-# 2
+#➤ 2
 # Stwórz dwie zmienne s1 i s2 przechowujące dowolne wyrazy, utwórz nowy łańcuch s3, dołączając s2 w środku s1.
 import math
 print("TASK 2")
@@ -10,7 +10,7 @@ s3 = s1[0:middle_s1] + s2 + s1[middle_s1:len_s1]
 
 print(s3)
 
-# 3
+#➤ 3
 print("\nTASK 3")
 # Do zmiennej quote przypisz zdanie: „Honesty is the first chapter in the book of wisdom.”
 quote = "Honesty is the first chapter in the book of wisdom."
@@ -50,7 +50,7 @@ print(quote[::-1])
 quote_friendship = quote.replace("wisdom", "friendship")
 print(quote_friendship)
 
-#4
+#➤ 4
 print("\nTASK 4")
 # Utwórz skrypt, który zapyta użytkownika o tytuł książki, nazwisko autora, liczbę stron. Sprawdź czy tytuł i nazwisko składają się tylko z liter, natomiast liczba stron jest wartością liczbową.
 title = input("Enter title of the book: ")
@@ -82,7 +82,7 @@ print("Your book is:", book)
 book_len = len(book)
 print(book_len)
 
-#5 Palindrom to wyrażenie brzmiące tak samo czytane od lewej do prawej i od prawej do lewej np.: Kobyła ma mały bok.
+#➤ 5 Palindrom to wyrażenie brzmiące tak samo czytane od lewej do prawej i od prawej do lewej np.: Kobyła ma mały bok.
 # Pozwól użytkownikowi wprowadzić dowolne zdanie. Następnie sprawdź czy wprowadzone wyrażenie jest palindromem.
 pal = str(input("Enter sentence: "))
 pal_reversed = pal[::-1].upper().replace(" ", "")
@@ -91,7 +91,7 @@ is_pal = pal.upper().replace(" ", "") == pal_reversed
 
 print("If palindrom:", is_pal)
 
-#6 Przekopiuj zawartość import this do zmiennej.
+#➤ 6 Przekopiuj zawartość import this do zmiennej.
 print("\nTASK 6")
 import this
 txt = "".join([this.d.get(c, c) for c in this.s])

@@ -1,4 +1,4 @@
-# 1 Napisac w petli for
+#➤ 1 Napisac w petli for
 fahr = 0
 for fahr in range(0, 200):
     celc = round(5 / 9 * (fahr - 32), 2)
@@ -6,7 +6,7 @@ for fahr in range(0, 200):
     fahr += 20
 
 
-# 2 Napisz prostą grę, w której użytkownik musi zgadnąć liczbę od 0 - 20 ukrytą w programie (np. secret_num = 5). Pytaj użytkownika o podanie liczby tak długo, aż nie zgadnie.
+#➤ 2 Napisz prostą grę, w której użytkownik musi zgadnąć liczbę od 0 - 20 ukrytą w programie (np. secret_num = 5). Pytaj użytkownika o podanie liczby tak długo, aż nie zgadnie.
 secret_num = 5
 quest = int(input("Zgadnij liczbę od 0-20: "))
 
