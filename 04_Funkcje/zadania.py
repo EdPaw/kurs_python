@@ -19,4 +19,5 @@ summary = sum_elementy([4, 6, 7])
 print(summary)
 
 
-
+#operator 3 argumentowy
+#return val1 if val1 > val2 else val2
