@@ -8,8 +8,12 @@ def czy_liczba_w_zakresie(liczba, zakres_od, zakres_do):
         print(f"nie, liczba {liczba} jest spoza zakresu {zakres_od} - {zakres_do}")
 
 
-liczba_uzytk = int(input("Podaj liczbę: "))
-zakres_od_uzytk = int(input("Podaj zakres od: "))
-zakres_do_uzytk = int(input("Podaj zakres do: "))
+def main():
+    liczba_uzytk = int(input("Podaj liczbę: "))
+    zakres_od_uzytk = int(input("Podaj zakres od: "))
+    zakres_do_uzytk = int(input("Podaj zakres do: "))
 
-czy_liczba_w_zakresie(liczba_uzytk, zakres_od_uzytk, zakres_do_uzytk)
+    czy_liczba_w_zakresie(liczba_uzytk, zakres_od_uzytk, zakres_do_uzytk)
+
+
+main()
