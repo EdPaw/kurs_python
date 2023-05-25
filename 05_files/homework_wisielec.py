@@ -1,19 +1,18 @@
-# ➤ 10 Stwórz grę wisielec.txt “bez wisielca”.
-# Komputer losuje wyraz z dostępnej w programie listy wyrazów. Wyświetla zamaskowany wyraz z widoczną liczbą znaków (np. ‘- - - - - - -‘)
-# Użykownik podaje literę.
-# Sprawdź, czy litera istnieje w wyrazie. Jeśli tak, wyświetl mu komunikat:
-# “Trafione!” oraz napis ze znanymi literami.
-# W przeciwnym wpadku pokaż komunikat:
-# “Nie trafione, spróbuj jeszcze raz!”.
-# Możesz ograniczyć liczbę prób do np. 10.
-
 import random
 
-WORDS = ["WORD", "GUESSING", "HANGING", "LETTERS", "HANGMAN", "HINT", "GALLOWS", "GUESS", "LOSE", "WIN"]
 
+def draw_from_category(category):
+    with open("wisielec.txt", encoding="UTF-8") as fopen:
+        content = fopen.readlines()
+        to_choose = []
+        for i in content:
+            word_curr = i.strip()
+            if str(category) in word_curr:
+                to_choose.append(word_curr)
 
-def draw_word():
-    word = list(random.choice(WORDS))
+    word = random.choice(to_choose)
+    word = word.split(":")
+    word = word[1]
     return word
 
 
@@ -32,21 +31,30 @@ def print_pretty(any_list):
 
 def hanging_man(attempts):
 
-    word = draw_word()
-    masked_word = mask_word(word)
+    category = int(input("""Podaj kategorię:
+    1 - zwierzęta
+    2 - owoce
+    3 - warzywa  -> """))
 
-    #odkomentuj do sprawdzenia słowa:
-    #print_pretty(word)
+    word = draw_from_category(category)
+    masked_word = mask_word(word)
     print_pretty(masked_word)
 
-    #próba nalicza się tylko wtedy, kiedy użytkownik nie trafi w literę
+    #print_pretty(word)
+    word_str = "". join(word)
+
+    how_long_word = len(masked_word)
     how_many_attempts = 1
 
     while True:
         letter = input("\nPodaj literę: ").upper()
 
-        while len(letter) != 1 or not letter.isalpha():
-            letter = input("\nŹle wpisana litera. Podaj jedną literę: ").upper()
+        while (len(letter) != 1 or len(letter) != how_long_word) and not letter.isalpha():
+            letter = input("\nŹle wpisana litera. Podaj jedną literę lub całe słowo: ").upper()
+
+        if letter == word_str:
+            print("\nGratulacje! Wygrałaś!")
+            break
 
         if letter in word:
             print(f"\nPróba: {how_many_attempts}. Trafione! ")
