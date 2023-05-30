@@ -33,7 +33,7 @@ elif liczba == liczba_prog:
 else:
     print("pudło!")
 
-#➤ 7 Rozwiń kod bmi.py z pierwszych zajęć dodając teraz instrukcję warunkową, która wyświetli w zależności od wyniku: niedowaga / waga normalna / nadwaga / otyłość.
+#➤ 7 Rozwiń kod bmi.py z pierwszych zajęć dodając teraz instrukcję warunkową, która wyświetli w zależności od wyniku: niedowaga.txt / waga normalna / nadwaga.txt / otyłość.txt.
 kg = float(input("Podaj masę (kg): "))
 height = float(input("Podaj wzrost (m): "))
 
@@ -46,7 +46,7 @@ elif BMI < 24.9:
 elif BMI < 29.9:
     print("Your BMI is:",BMI, "- masz nadwagę")
 else:
-    print("Your BMI is:", BMI, "- masz otyłość")
+    print("Your BMI is:", BMI, "- masz otyłość.txt")
 
 #➤ 8 Sortowanie. Trzy dowolne liczby podane przez użytkownika zapisz do trzech zmiennych. Znajdź największą liczbę. Wyświetl liczby od największej do najmniejszej.
 nr_1 = float(input("Podaj pierwszą liczbę: "))

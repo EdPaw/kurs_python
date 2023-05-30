@@ -1,5 +1,5 @@
 #➤ 1 Skorzystaj ze swojego kodu bmi.py. Rozbij liczenie bmi na funkcję obliczającą bmi na podstawie danych użytkownika oraz zwracającą odpowiednią wartość
-#(niedowaga, waga normalna, nadwaga, otyłość) w zależności od otrzymanego parametru
+#(niedowaga.txt, waga normalna, nadwaga.txt, otyłość.txt) w zależności od otrzymanego parametru
 def oblicz_bmi():
     kg = float(input("Podaj masę (kg): "))
     height = float(input("Podaj wzrost (m): "))
@@ -14,7 +14,7 @@ def jaka_kategoria_bmi(bmi):
     elif bmi < 29.9:
         print("Your BMI is:",bmi, "- masz nadwagę")
     else:
-        print("Your BMI is:", bmi, "- masz otyłość")
+        print("Your BMI is:", bmi, "- masz otyłość.txt")
 
 bmi = oblicz_bmi()
 jaka_kategoria_bmi(bmi)
